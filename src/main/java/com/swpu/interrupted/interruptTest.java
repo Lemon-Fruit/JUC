@@ -1,6 +1,6 @@
 package com.swpu.interrupted;
 
-public class interruptedTest {
+public class interruptTest {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(() -> {
             while (!Thread.currentThread().isInterrupted())
@@ -11,7 +11,7 @@ public class interruptedTest {
 
         Thread.sleep(1000);
 
-        System.out.println("main thread interupt thread");
+        System.out.println("main thread interrupt thread");
         thread.interrupt();
 
         thread.join();
