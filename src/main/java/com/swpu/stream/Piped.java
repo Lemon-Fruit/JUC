@@ -23,7 +23,7 @@ public class Piped {
     }
 
     static class Print implements Runnable {
-        private PipedReader in;
+        private final PipedReader in;
 
         public Print(PipedReader in) {
             this.in = in;

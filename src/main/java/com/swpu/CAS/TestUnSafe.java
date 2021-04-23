@@ -22,7 +22,7 @@ public class TestUnSafe {
 
     static long stateOffset;
 
-    private volatile long state = 0;
+    private final long state = 0;
 
     static {
         try {

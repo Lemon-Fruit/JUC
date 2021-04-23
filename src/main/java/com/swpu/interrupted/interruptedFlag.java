@@ -6,7 +6,7 @@ public class interruptedFlag {
 
             // 开始：Thread.currentThread().interrupted() 为false
             // interrupt 打断后 interrupted 复位 变为true break;
-            while (!Thread.currentThread().interrupted()) {
+            while (!Thread.interrupted()) {
 
             }
             System.out.println("threadOne isInterrupted:" + Thread.currentThread().isInterrupted());

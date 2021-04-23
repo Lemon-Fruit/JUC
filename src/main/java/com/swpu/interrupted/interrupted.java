@@ -16,7 +16,7 @@ public class interrupted {
         System.out.println("isInterrupted:" + threadOne.isInterrupted());
 
         //获取中断标志，如果为true 重置标志
-        System.out.println("isInterrupted:" + threadOne.interrupted());
+        System.out.println("isInterrupted:" + Thread.interrupted());
         /*
         threadOne.interrupted()等价于Thread.interrupted()
         interrupted()为static方法
